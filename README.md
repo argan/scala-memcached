@@ -11,3 +11,7 @@ About
 * only jdk/scala core api used,no other dependency
 * 
 
+To Run
+===
+just type "sbt test",need [sbt installed](https://github.com/harrah/xsbt/wiki/Getting-Started-Setup "sbt Installation")
+
