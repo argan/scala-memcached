@@ -11,7 +11,8 @@ About
 * only jdk/scala core api used,no other dependency
 * 
 
-To Run
+To Test
 ===
-just type "sbt test",need [sbt installed](https://github.com/harrah/xsbt/wiki/Getting-Started-Setup "sbt Installation")
-
+* run your memcached on localhost:11211
+* install [sbt](https://github.com/harrah/xsbt/wiki/Getting-Started-Setup "sbt Installation")
+* type "sbt test" 
