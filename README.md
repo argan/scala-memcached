@@ -8,5 +8,6 @@ About
 * simple connection pool
 * basic unit tests
 * small code base(<600)
+* only jdk/scala core api used,no other dependency
 * 
 

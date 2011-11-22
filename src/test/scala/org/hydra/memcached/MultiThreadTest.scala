@@ -3,6 +3,7 @@ import java.util.concurrent.CountDownLatch
 import org.hydra.Logger
 import java.util.concurrent.TimeUnit
 import junit.framework.TestCase
+import junit.framework.Assert._
 
 class MultiThreadTest extends TestCase {
 
@@ -43,7 +44,7 @@ class Runner(i: Int, total: Int, c: MemcachedClient, latch: CountDownLatch) exte
   def run = {
     (1 to total).map(j => {
       c.set(i + "foo" + j, i + "bar" + j)
-      c.get(i + "foo" + j)
+      assertEquals(i + "bar" + j, new String(c.get(i + "foo" + j).data))
     })
     latch.countDown()
   }
